@@ -129,4 +129,24 @@ switch($randomizer)
 //echo "<span style = 'font-size: . "$fontSize . ";'> www.jamunagroup.com <span/>";
 echo "<span style = 'font-size: $fontSize ', color: red;>  Dhaka  </span>"
 
+
+$i = 1;
+while($i < 10)
+{
+    $x = sqrt($i);
+    echo "Sqrt($i) : " . $x . "<br/>";
+    $i++;
+}
+
+$age = 18;
+if($age >= 18)
+{
+    echo "Congratulations! you can vote. <br/>";
+}
+else
+{
+    echo "Sorry! you can't vote. <br/>";
+}
+echo "Thank you.";
+
 ?>
