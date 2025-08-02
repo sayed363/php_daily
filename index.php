@@ -127,7 +127,7 @@ switch($randomizer)
         break;
 }
 //echo "<span style = 'font-size: . "$fontSize . ";'> www.jamunagroup.com <span/>";
-echo "<span style = 'font-size: $fontSize ', color: red;>  Dhaka  </span>"
+echo "<span style = 'font-size: $fontSize ', color: red;>  Dhaka  </span>";
 
 
 $i = 1;
@@ -147,6 +147,30 @@ else
 {
     echo "Sorry! you can't vote. <br/>";
 }
-echo "Thank you.";
+echo "Thank you. <br/><br/>";
+
+//nested loop
+
+echo "Nested Loop <br>";
+/*
+for($i = 1; $i < 3; $i++)
+{
+    for($j = 1; $j < 3; $j++)
+    {
+        for($k = 1; $k < 3; $k++)
+        {
+            print "Level-3: $i, Level-2: $j, Level-1: $k . <br>";
+        }
+    }
+}
+*/
+
+for($outer_list = 1; $outer_list <= 3; $outer_list++){
+    echo "<br/>Outer List-" . $outer_list . "<br/>";
+    for($j = 1; $j <= 3; $j++){
+        echo "------Inner-" . $j . "<br/>";
+           
+    }
+}
 
 ?>
